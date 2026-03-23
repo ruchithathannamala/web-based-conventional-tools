@@ -1,0 +1,140 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.converter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.conversion-input {
+    display: flex;
+    align-items: center;
+}
+
+input[type="number"],
+select {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result-container {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    margin-bottom: 20px;
+}
+
+#result {
+    font-size: 18px;
+}
+
+.common-measures {
+    margin-top: 20px;
+}
+
+.common-measures h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.common-measures ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.common-measures li {
+    margin-bottom: 5px;
+}
+
+#swapButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Make it round */
+    border: none;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-right: 10px; /* Add space between swap button and "to" units dropdown */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.footer-info {
+    color: #fff; /* Text color */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+.footer-content {
+    padding: 10px; /* Adjust padding as needed */
+    color: #fff; /* Text color */
+}
+
+.conversion-links {
+    width: 100%;
+    background-color: #333; /* Optional: sets a background color for the footer */
+    text-align: center; /* Centers the links */
+    padding: 10px 0; /* Add padding to the top and bottom */
+}
+
+.conversion-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.conversion-links ul li {
+    display: inline; /* Displays the list items in a line */
+    margin-right: 10px; /* Spacing between the list items */
+}
+
+.conversion-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.conversion-links a:hover {
+    text-decoration: underline;
+}
