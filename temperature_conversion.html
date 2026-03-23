@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+<link rel="stylesheet" type="text/css" href="temperature_conversion.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 id="welcome-message"></h2>
+    <div class="converter">
+        <div class="conversion-input">
+            <input type="number" id="temperature" placeholder="Enter temperature">
+            <select id="fromUnit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+            <button id="swapButton"> ↔ </button>
+            <select id="toUnit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+        </div><br>
+        <button id="convertButton">Convert</button>
+    </div>
+    <div id="result-container">
+        <div id="result"></div>
+    </div>
+    <div class="common-measures">
+        <h3>Common Temperature Units:</h3>
+        <ul>
+            <li>Celsius (°C): Celsius to Fahrenheit - (°C × 9/5) + 32</li>
+            <li>Fahrenheit (°F): Fahrenheit to Celsius - (°F - 32) × 5/9</li>
+            <li>Kelvin (K): Kelvin to Celsius - K - 273.15</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+      <div class="conversion-links">
+      <div class="conversion-links">
+        <p>&copy; 2026 Conversion Tools</p>
+        <p class="credit">Developed by <strong>Vignesh M</strong> during internship coursework</p>
+        <ul>
+          <li><a href="currency_conversion.html">Currency Conversion</a></li>
+          <li><a href="unit_conversion.html">Unit Conversion</a></li>
+          <li><a href="temperature_conversion.html">Temperature Conversion</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script src="temperature_conversion.js"></script>
+</body>
+</html>
