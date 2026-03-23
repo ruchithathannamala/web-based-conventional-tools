@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit Converter</title>
+<link rel="stylesheet" type="text/css" href="unit_conversion.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 id="welcome-message"></h2>
+    <div class="converter">
+        <div class="conversion-input">
+            <input type="number" id="unit" placeholder="Enter value">
+            <select id="fromUnit">
+                <option value="m">Meter (m)</option>
+                <option value="km">Kilometer (km)</option>
+                <option value="mm">Millimeter (mm)</option>
+                <option value="um">Micrometer (µm)</option>
+                <option value="nm">Nanometer (nm)</option>
+                <option value="yard">Yard (yd)</option>
+                <option value="mile">Mile (mi)</option>
+                <option value="cm">Centimeter (cm)</option> 
+                <option value="inch">Inch (in)</option> 
+                <option value="foot">Foot (ft)</option> 
+            </select>
+            <button id="swapButton">↔ </button>
+            <select id="toUnit">
+                <option value="m">Meter (m)</option>
+                <option value="km">Kilometer (km)</option>
+                <option value="mm">Millimeter (mm)</option>
+                <option value="um">Micrometer (µm)</option>
+                <option value="nm">Nanometer (nm)</option>
+                <option value="yard">Yard (yd)</option>
+                <option value="mile">Mile (mi)</option>
+                <option value="cm">Centimeter (cm)</option> <!-- Added -->
+                <option value="inch">Inch (in)</option> <!-- Added -->
+                <option value="foot">Foot (ft)</option> <!-- Added -->
+            </select>
+        </div><br>
+        <button id="convertButton">Convert</button>
+    </div>
+    <div id="result-container">
+        <div id="result"></div>
+    </div>
+    <div class="common-measures">
+        <h3>Common Measurement Values</h3>
+        <ul>
+            <li>1 km = 1000 m</li>
+            <li>1 m = 100 cm</li>
+            <li>1 m = 1000 mm</li>
+            <li>1 inch = 2.54 cm</li>
+            <li>1 foot = 12 inches</li>
+            <li>1 yard = 3 feet</li>
+            <li>1 mile = 1760 yards</li>
+            <!-- Add more common measurement values as needed -->
+        </ul>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+      <div class="conversion-links">
+      <div class="conversion-links">
+        <p>&copy; 2026 Conversion Tools</p>
+        <p class="credit">Developed by <strong>Vignesh M</strong> during internship coursework</p>
+        <ul>
+          <li><a href="currency_conversion.html">Currency Conversion</a></li>
+          <li><a href="unit_conversion.html">Unit Conversion</a></li>
+          <li><a href="temperature_conversion.html">Temperature Conversion</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script src="unit_conversion.js"></script>
+</body>
+</html>
