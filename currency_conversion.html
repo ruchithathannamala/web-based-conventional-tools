@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Converter</title>
+<link rel="stylesheet" type="text/css" href="currency_conversion.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 id="welcome-message"></h2>
+    <div class="converter">
+        <div class="conversion-input">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select id="fromCurrency">
+                <option value="USD">USD - United States Dollar ($)</option>
+                <option value="EUR">EUR - Euro (€)</option>
+                <option value="GBP">GBP - British Pound (£)</option>
+                <option value="JPY">JPY - Japanese Yen (¥)</option>
+                <option value="CAD">CAD - Canadian Dollar (CA$)</option>
+                <option value="INR">INR - Indian Rupee (₹)</option>
+                <option value="AFN">AFN - Afghan Afghani (؋)</option>
+                <option value="ALL">ALL - Albanian Lek (L)</option>
+                <option value="DZD">DZD - Algerian Dinar (د.ج)</option>
+                <option value="AOA">AOA - Angolan Kwanza (Kz)</option>
+                <option value="ARS">ARS - Argentine Peso ($)</option>
+                <option value="AMD">AMD - Armenian Dram (֏)</option>
+                <option value="AWG">AWG - Aruban Florin (Afl)</option>
+                <option value="AUD">AUD - Australian Dollar (AU$)</option>
+                <option value="CNY">CNY - Chinese Yuan (¥)</option>
+                <option value="COP">COP - Colombian Peso ($)</option>
+                <option value="IRR">IRR - Iranian Rial (﷼)</option>
+                <option value="AED">AED - UAE Dirham (د.إ)</option>
+                <option value="KWD">KWD - Kuwaiti Dinar (د.ك)</option>
+                <option value="JPY">JPY - Japanese Yen (¥)</option>
+                <option value="ILS">ILS - Israeli New Shekel (₪)</option>
+                <option value="KES">KES - Kenyan Shilling (KSh)</option>
+                <option value="LRD">LRD - Liberian Dollar ($)</option>
+                <option value="LYD">LYD - Libyan Dinar (ل.د)</option>
+                <option value="MGA">MGA - Malagasy Ariary (Ar)</option>
+                <option value="MYR">MYR - Malaysian Ringgit (RM)</option>
+                <option value="NPR">NPR - Nepalese Rupee (रू)</option>
+                <option value="OMR">OMR - Omani Rial (ر.ع.)</option>
+                <option value="PKR">PKR - Pakistani Rupee (₨)</option>
+                <option value="QAR">QAR - Qatari Riyal (ر.ق)</option>
+                <option value="SAR">SAR - Saudi Riyal (ر.س)</option>
+                <option value="RSD">RSD - Serbian Dinar (дин.)</option>
+            </select>
+            <span class="to-word">
+                <button class="swap-button" onclick="swapCurrencies()">↔</button>
+              </span>
+            <span class="to-word">to</span>
+            <select id="toCurrency">
+<option value="USD">USD - United States Dollar ($)</option>
+    <option value="EUR">EUR - Euro (€)</option>
+    <option value="GBP">GBP - British Pound (£)</option>
+    <option value="JPY">JPY - Japanese Yen (¥)</option>
+    <option value="CAD">CAD - Canadian Dollar (CA$)</option>
+    <option value="INR">INR - Indian Rupee (₹)</option>
+    <option value="AFN">AFN - Afghan Afghani (؋)</option>
+    <option value="ALL">ALL - Albanian Lek (L)</option>
+    <option value="DZD">DZD - Algerian Dinar (د.ج)</option>
+    <option value="AOA">AOA - Angolan Kwanza (Kz)</option>
+    <option value="ARS">ARS - Argentine Peso ($)</option>
+    <option value="AMD">AMD - Armenian Dram (֏)</option>
+    <option value="AWG">AWG - Aruban Florin (Afl)</option>
+    <option value="AUD">AUD - Australian Dollar (AU$)</option>
+    <option value="CNY">CNY - Chinese Yuan (¥)</option>
+    <option value="COP">COP - Colombian Peso ($)</option>
+    <option value="IRR">IRR - Iranian Rial (﷼)</option>
+    <option value="AED">AED - UAE Dirham (د.إ)</option>
+    <option value="KWD">KWD - Kuwaiti Dinar (د.ك)</option>
+    <option value="JPY">JPY - Japanese Yen (¥)</option>
+    <option value="ILS">ILS - Israeli New Shekel (₪)</option>
+    <option value="KES">KES - Kenyan Shilling (KSh)</option>
+    <option value="LRD">LRD - Liberian Dollar ($)</option>
+    <option value="LYD">LYD - Libyan Dinar (ل.د)</option>
+    <option value="MGA">MGA - Malagasy Ariary (Ar)</option>
+    <option value="MYR">MYR - Malaysian Ringgit (RM)</option>
+    <option value="NPR">NPR - Nepalese Rupee (रू)</option>
+    <option value="OMR">OMR - Omani Rial (ر.ع.)</option>
+    <option value="PKR">PKR - Pakistani Rupee (₨)</option>
+    <option value="QAR">QAR - Qatari Riyal (ر.ق)</option>
+    <option value="SAR">SAR - Saudi Riyal (ر.س)</option>
+    <option value="RSD">RSD - Serbian Dinar (дин.)</option>
+            </select>
+        </div>
+        <button onclick="convert()">Convert</button>
+    </div>
+    <div id="result-container">
+        <div id="result"></div>
+    </div>
+</div>
+<footer>
+  <div class="disclaimer-container">
+<div class="marquee">
+  <p>Disclaimer: Currency conversion rates are subject to change and may vary based on market conditions.</p>
+</div>
+  </div>
+    <div class="footer-content">
+      <div class="conversion-links">
+        <p>&copy; 2026 Conversion Tools</p>
+        <p class="credit">Developed by <strong>Vignesh M</strong> during internship coursework</p>
+        <ul>
+          <li><a href="currency_conversion.html">Currency Conversion</a></li>
+          <li><a href="unit_conversion.html">Unit Conversion</a></li>
+          <li><a href="temperature_conversion.html">Temperature Conversion</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+<script src="currency_conversion.js"></script>
+</body>
+</html>
